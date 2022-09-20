@@ -1,0 +1,19 @@
+{
+    "name": "timedropper",
+    "version": "1.0.0",
+    "description": "This package is a fork from the plugin timedropper available at github: https://github.com/felicegattuso/timedropper.git",
+    "main": "timedropper.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/felicegattuso/timedropper.git"
+    },
+    "author": "felicegattuso",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/felicegattuso/timedropper/issues"
+    },
+    "homepage": "https://github.com/felicegattuso/timedropper#readme"
+}

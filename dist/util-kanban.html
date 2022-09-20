@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Help Center</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="\node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1aa107ef78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/assets/css/app.css">
+    <link id="theme-sheet" rel="stylesheet" href="/dist/assets/css/orange.css">
+</head>
+
+<body class="is-theme-core">
+
+    <div class="pageloader"></div>
+    <div class="infraloader is-active"></div>
+    <!-- cabecalho -->
+    <!-- cabecalho -->
+    <!-- cabecalho -->
+    <div class="hero is-theme-primary">
+
+        <div id="main-hero" class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered pt-40">
+                    <div class="column"></div>
+                    <div class="column is-9">
+                        <div class="help-header">
+                            <img src="assets/img/cabecalho.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section help-section is-relative">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column"></div>
+                <div class="column is-9 help-container">
+
+                    <!-- navegação entre as paginas -->
+                    <!-- navegação entre as paginas -->
+                    <!-- navegação entre as paginas -->
+                    <nav class="breadcrumbs">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="pchat.html">Kanban</a></li>
+                            <li>Utilizando o Kanban</li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="flex-card single-help-article">
+                        <div class="article-inner">
+                            <!-- Titulo da pagina -->
+                            <!-- Titulo da pagina -->
+                            <!-- Titulo da pagina -->
+                            <h2 class="title is-3 dark-text">Utilizando o Kanban</h2>
+                            <h3 class="subtitle is-5">SUBTITULO</h3>
+
+                            <!-- Corpo da pagina -->
+                            <!-- Corpo da pagina -->
+                            <div class="content">
+                                <h4 class="subtitle is-5 dark-text">1. Introdução:</h4>
+                                <h4 class="subtitle is-5 dark-text">1.1. O que é o Kanban</h4>
+                                <p>O Método Kanban é utilizado para organização e gestão de tarefas.</p>
+                                <p>Originalmente construído usando um Quadro dividido em Colunas onde:</p>
+                                <ul>
+                                    <li><strong>Quadro:</strong> Normalmente um quadro branco;</li>
+                                    <li><strong>Colunas:</strong> representam o Fluxo de trabalho, onde uma Tarefa é
+                                        colocada em um cartão e vai passando de uma coluna pra outra a medida que os
+                                        trabalhos vão sendo executados;</li>
+                                    <li><strong>Cartão:</strong> Papel onde se escreve a Tarefa;</li>
+                                    <li><strong>Tarefa:</strong> Atividade a ser executada.</li>
+                                </ul>
+                                <p>Normalmente se define o Título das Colunas de acordo com o Fluxo de trabalho a ser
+                                    executado.</p>
+
+                                <p>Veja exemplos abaixo de Kanban convencional.</p>
+                                <img src="/dist/assets/img/kanban/1.00.01-kanban-convencional.png " alt="">
+                                <h8>Figura-00.01 – Quadro Kanban com cartões coloridos</h8>
+
+                                <img src="/dist/assets/img/kanban/2.00.02-kanban-convencional.png " alt="">
+                                <h8>Figura-00.02 – Quadro Kanban cartões de mesma cor</h8>
+
+                                <h4 class="subtitle is-5 dark-text">1.2. Entendendo o Kanban Eletrônico (e-Kanban) da
+                                    Mais Chat</h4>
+
+                                <p><strong>O e-Kanban consiste dos seguintes elementos:</strong></p>
+
+                                <li><strong>QUADRO:</strong> É o elemento principal do Kanban e define um Assunto ou um
+                                    Projeto a ser gerenciado. O sistema permite gerenciar vários Quadros.</li>
+
+                                <li><strong>LISTA:</strong> Um Quadro é composto por várias colunas as quais denominamos
+                                    de Listas. O termo Lista é mais apropiado, pois uma coluna na prática contém uma
+                                    LISTA de tarefas a serem executadas. As Listas representam o fluxo de trabalho, onde
+                                    o título da Lista identifica o “Estado” que se encontra a atividade.
+                                    Exemplo de Lista: [A FAZER], [PLANEJAR], [EXECUTAR], [REVISAR], [AJUSTAR],
+                                    [CONCLUÍDO]</li>
+
+                                <li><strong>CARTÃO:</strong> O Cartão é o local onde se escreve a Tarefa a ser
+                                    executada. Na figura acima visualiza-se os Cartões coloridos, onde as cores são
+                                    utilizadas para tipificar as tarefas. Exemplificando tem-se o Tipo de Prioridade:
+                                    [Normal, Média, Alta, Urgente]. Neste exemplo usa-se uma cor para cada Prioridade. O
+                                    Gestor do Kanban define a melhor forma de utilziar as cores dos Cartões.</li>
+
+                                <li><strong>TAREFA:</strong> A Tarefa é composta de uma ou mais atividade(s) a executar.
+                                </li>
+
+                                <h4 class="subtitle is-5 dark-text">1.3. Funcionalidades do e-Kanban da Mais Chat
+                                </h4>
+
+                                <ul>
+                                    <li>Flexibilidade para criação de Novos Quadros e Listas</li>
+
+                                    <li>Permite organizar e mover os Cartões ( Tarefas) entre as Listas de acordo com o
+                                        fluxo de trabalho</li>
+
+                                    <li>Facilitar a visualização e edição de Tarefas</li>
+
+                                    <li>Priorizar Tarefas e estipular prazos</li>
+
+                                    <li>Tipificar tarefas utilizando Cartões associado a Tags</li>
+
+                                    <li>Registrar Ocorrências e Ações nas Tarefas</li>
+
+                                    <li>Adicionar anexos (doc, pdf, imagem, zip) na Tarefa</li>
+
+                                    <li>Gerenciar e acompanhar a execução de Tarefas</li>
+
+                                    <li>Distribuir o trabalho para um ou mais integrantes da equipe</li>
+
+                                    <li>Gerenciar uma ou mais equipes de trabalho associando-as por Quadro
+                                    </li>
+
+                                    <li>Manter histórico de atividades executadas.</li>
+                                </ul>
+
+                                <h4 class="subtitle is-5 dark-text">1.4. Onde utilizar o Kanban</h4>
+
+                                <p>Pode ser utilizado para gestão de tarefas em qualquer área ou segmento, citando como
+                                    exemplo:</p>
+
+                                <ul>
+                                    <li>Industria Automotiva</li>
+
+                                    <li>Construção Civil</li>
+
+                                    <li>Processo Jurídicos</li>
+
+                                    <li>Desenvolvimento de Softwares</li>
+
+                                    <li>Criação de Suinos</li>
+
+                                    <li>Agenda de compromissos</li>
+
+                                    <li>Projetos Pessoais
+                                    </li>
+
+
+                                </ul>
+
+                                <h4 class="subtitle is-5 dark-text">2. Acessando o Kanban no painel da Mais Chat a
+                                    partir do menu lateral:</h4>
+
+                                <img src="/dist/assets/img/kanban/3.00-kanban-menu-inicio.png " alt="">
+                                <h8>Figura-01 – Menu Mais Chat</h8>
+
+                                <p>Ao selecionar a opção Kanban (na tela acima), o sistema mostrará a tela abaixo:</p>
+
+                                <img src="/dist/assets/img/kanban/4.01.00-kanban.png " alt="">
+                                <h8>Figura-02 – Kanban</h8>
+
+                                <h4 class="subtitle is-5 dark-text">2.1 Como criar um Quadro</h4>
+                                <ol>
+                                    <li>Na tela acima vemos dois Quadros previamente criados [ Suporte Técnico,
+                                        Sugestões/Melhorias ].</li>
+
+                                    <li>No canto superior direito da tela acima tem-se o botão <strong
+                                            style="background:rgb(0, 153, 255); color:white;">+ Quadro Kanban </strong>
+                                        em destaque por um retângulo em vermelho.</li>
+
+                                    <li>Usaremos esse botão para criar um novo Quadro. Ao cliclar no botão aparecerá a
+                                        janela abaixo:</li>
+
+                                    <img style="width: 50%; margin-left: 25%;"
+                                        src="/dist/assets/img/kanban/5.01.01-kanban-incluir.png " alt="">
+                                    <h8 style="margin-left: 155px;">Figura-03 – Novo Quadro</h8>
+
+                                    <li>Após incluir um Nome e uma Descrição para o Quadro, Clique no botão <strong
+                                            style="background:rgb(0, 153, 255); color:white;">Salvar</strong>.</li>
+                                    <li>Após isto o novo Quadro criado aparecerá na relação de quadros na tela da
+                                        Figura-02</li>
+                                    <li>Ao clicar em cima de um Quadro existente (tela da Figura-02) seleciona-se o
+                                        quadro para trabalho, podendo desta forma criar ou exlcuir Listas, Criar ou
+                                        arquivar Tarefas e/ou lançar Ações nas tarefas.</li>
+                                    <li>Ao selecionar o Quadro <strong>“Sugestões e Melhorias”</strong> aparecerá a tela
+                                        abaixo:</li>
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/6.02.00-criar-lista.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-04 – Quadro “Sugestão de melhorias”</h8>
+
+                                    <li>Ao lado direito da tela tem-se os botões:<strong>[Membros], [Adicionar
+                                            Lista]</strong>, <strong>[Arquivados], [Configurações], [Quadros]</strong>,
+                                        os quais serão explanados ao longo deste tutorial.</li>
+
+                                </ol>
+                                <h4 class="subtitle is-5 dark-text">2.2 Como criar uma Lista</h4>
+                                <ul>
+                                    <li>Clicar no botão: <strong
+                                            style="background:rgb(0, 153, 255); color:white;">Adicionar
+                                            Lista</strong>(ver Figura-04) e aparecerá a janela abaixo:
+                                    </li>
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/7.02.01-nome-lista.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-05 – Incluir Lista </h8>
+
+                                    <li>Informe o <strong>Nome da Lista</strong> e clique no botão <strong
+                                            style="background:rgb(0, 153, 255); color:white;">Adicionar</strong>. Após
+                                        isto a Lista incluída aparecerá no Quadro, conforme mostrado na tela abaixo.
+                                    </li>
+
+                                    <img style="width: 90%;"
+                                        src="/dist/assets/img/kanban/8.02.02-lista-criada-painel.png " alt="">
+                                    <h8 style="margin-left: 22px;">Figura-06 – Kanban – Uma Lista</h8>
+
+                                    <li>As listas são organizadas como se fossem Colunas de uma planilha, sendo que em
+                                        cada Lista pode-se adicionar Cartões(tickets) com Tarefas em cada célula da
+                                        coluna, ou ainda, movimentar (arrastar) os Cartões de uma Lista para outra.</li>
+
+                                    <li>Na tela abaixo visualiza-se várias listas criadas, sendo: [A FAZER], [FAZENDO],
+                                        [CONCLUÍDO] e [BACKLOG].</li>
+
+                                    <img style="width: 90%;"
+                                        src="/dist/assets/img/kanban/9.02.03.00-lista-funcoes-1.png " alt="">
+                                    <h8 style="margin-left: 22px;">Figura-07 – Kanban – Listas</h8>
+
+                                    <li>Todas as listas são visualizadas no quadro em forma de Colunas.</li>
+                                    <li>Observando-se no lado direito do Título cabeçalho de cada Lista, existe um
+                                        número que indica o número de Cartões existentes na lista. No caso mostrado,
+                                        todas as Listas estão com este número zerado, ou seja, não possuem Cartões de
+                                        Tarefas.</li>
+                                    <li>Ao clicar nos pontinhos ao lado do número de Cartões abre-se uma janela com
+                                        Funções da Lista, <strong>[Renomear, Mover, Excluir]</strong>, onde:</li>
+                                    <ul>
+                                        <li><strong>Renomear:</strong> Esta opção permite <strong>alterar o Nome e
+                                                Descição</strong> da respectiva Lista</li>
+
+                                        <li><strong>Mover:</strong> Esta opção permite mover a ordem de apresentação da
+                                            lista, a qual está ordenada da esquerda para a direita, sempre começando em
+                                            1. Na janela aberta sempre mostra em que número de ordem está a Lista
+                                            selecionada. Observar que o <strong>Número de ordem</strong> respresenta a
+                                            posição da coluna que a Linha deverá ser visualizada no Quadro Kanban.</li>
+
+                                        <li><strong>Excluir:</strong> Esta opção permite <strong>Excluir a
+                                                lista.</strong> Observar que uma Lista só poderá ser excluida se o seu
+                                            <strong>Contador de Cartões</strong>(lado direito do Titulo da Lista)
+                                            estiver zerado.
+                                        </li>
+                                    </ul>
+                                </ul>
+
+                                <h4 class="subtitle is-5 dark-text">2.3 Adicionando Membros para o Quadro</h4>
+                                <ol>
+                                    <li>Para associar Pessoas com Tarefas, primeiramente precisa-se adicionar estas
+                                        pessoas com o respectivo Quadro em uso. Isto na prática siginifica que estamos
+                                        criando uma equipe de trabalho e associando-a com o Quadro Kanban em questão.
+                                    </li>
+
+                                    <li>Qualquer pessoa (Membro) depois de associado ao Quadro, poderá participar ou ser
+                                        responsável por qualquer tarefa.</li>
+
+                                    <li><strong>Permissões.</strong></li>
+                                    <ul>
+                                        <li><strong>Criador da Tarefa:</strong></li>
+                                        <ul>
+                                            <li>Cria Tarefa e define um Responsável pela Tarefa e poderá adicionar
+                                                Membros e Participantes.</li>
+                                            <li>Poderá Incluir/Editar/Remover qualquer Ação e/ou Anexo de Tarefas as
+                                                quais for o Criador.</li>
+                                            <li>Poderá Arquivar ou Desarquivar Tarefas as quais for o Criador</li>
+                                        </ul>
+
+                                        <ul><strong>Responsável da Tarefa:</strong></ul>
+                                        <ul>
+                                            <li>Poderá adicionar Participantes.</li>
+                                            <li>Poderá Incluir/Editar/Remover qualquer Ação e/ou Anexo.</li>
+                                            <li>Poderá Arquivar ou Desarquivar as Tarefas da qual é Responsável</li>
+                                        </ul>
+
+                                        <ul>Participante:</ul>
+                                        <ul>
+                                            <li>Poderá Incluir/Editar/Remover suas Ação e/ou Anexo nas Tarefas em que é
+                                                Participante.</li>
+                                        </ul>
+                                    </ul>
+
+                                    <img style="width: 90%;"
+                                        src="/dist/assets/img/kanban/10.04.00-membros-adicionar.png " alt="">
+                                    <h8 style="margin-left: 22px;">Figura-08 – Kanban – Adocionar Membros</h8>
+
+                                    <li>Na tela acima, ao clicar no botão <strong
+                                            style="background:rgb(0, 153, 255); color:white;">Membros</strong>pode-se
+                                        adicionar os membros ao presente quadro, conforme mostra janela aberta
+                                        imediatamente abaixo do botão clicado.</li>
+
+                                    <li>Os membros que aparecem na lista para serem selecionadas, são pessoas do mesmo
+                                        nível hierarquico ou níveis abaixo do usuário logado, o qual está fazendo a
+                                        operação de inclusão de membros.</li>
+
+                                    <li>Selecionar o membro que fará parte do Quadro e clicar no botão [ Adiconar ].
+                                        Repetir a operação até <strong
+                                            style="background:rgb(0, 153, 255); color:white;">Adicionar</strong> todos
+                                        os membros.</li>
+
+                                </ol>
+
+                                <h4 class="subtitle is-5 dark-text">2.4 Adicionando Cartões (Tarefas)</h4>
+                                <ol>
+                                    <li>Para adicionar uma nova Tarefa, escolher a Lista desejada e clicar no botão
+                                        <strong style="background:rgb(0, 153, 255); color:white;">Adicionar
+                                            Cartão</strong>, conforme mostrado nos destaques em vermelho na tela abaixo.
+                                    </li>
+
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/11.03.00-tarefa-nova.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-09 – Kanban – Tarefas</h8>
+
+                                    <li>Ao clicar no botão <strong
+                                            style="background:rgb(0, 153, 255); color:white;">Adicionar Cartão</strong>
+                                        (conforme destacado na figura acima nos retângulos em vermelho) , em qualquer
+                                        das Filas (colunas), aparecerá a janela abaixo:</li>
+
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/12.03.00-tarefa-incluir.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-10 – Kanban – Adicionar Tarefa</h8>
+
+                                    <li>Preencher os campos da tela observando:</li>
+                                    <ul>
+                                        <li>Campo Nome: Informe o <strong>Nome</strong> (Título) da Atividade</li>
+
+                                        <li>Campo <strong>Descrição</strong>: Descrever o contexto da atividade e oque
+                                            deverá ser feito</li>
+
+                                        <li>Adicionar <strong>Anexo:</strong> Permite adicionar arquivos anexo (Doc,
+                                            imagem, pdf, zip)</li>
+
+                                        <li>Adicionar <strong>Notas:</strong> Permite registrar observações e os
+                                            trabalhos executados</li>
+
+                                        <li>Campo <strong>Quadro:</strong> Quado a atividade é aberta pelo Menu Kanban
+                                            este campo não aparece, pois já foi previamente selecionado Quadro e Lista
+                                            para criar a tarefa. Este campo só aparece a partir da criação da Tarefa
+                                            pelo Chat de atendimento e/ou pelo Cadastro de Contato.</li>
+
+                                        <li>Campo <strong>Lista:</strong> idem ao campo Quadro
+                                        </li>
+
+                                        <li>Campo <strong>Prazo:</strong> Permite informar uma Data para conclusão da
+                                            Tarefa, porém não é obrigatório o preenchimento.</li>
+
+                                        <li>Campo <strong>Prioridade:</strong> Permite selecionar a Prioridade desta
+                                            Tarefa a partir de uma lista padronizada.</li>
+
+                                        <li>Campo <strong>Tags:</strong> Permite selecionar as <strong>Tags a qual esta
+                                                Tarefa estará vinculada</strong>. As Tags que aparecem para escolha
+                                            devem ser cadastradas antecipadamente em <strong>Configurações /Parametros /
+                                                Tags</strong>.</li>
+
+                                        <li>Campo <strong>Cliente:</strong> Permite selecionar o Cliente solicitante da
+                                            Tarefa (cadastro de Clientes)</li>
+
+                                        <li>Campo <strong>Responsável:</strong> Permite selecionar o
+                                            <strong>Responsável</strong> pela Tarefa a partir dos Membros adicionados no
+                                            Quadro.
+                                        </li>
+
+                                        <li>Campo <strong>Participante:</strong> Permite selecionar os Participantes da
+                                            Tarefa a partir dos Membros adicionados no Quadro.</li>
+
+                                        <li>Botão <strong style="background:grey; color:white;">Cancelar</strong> Volta
+                                            a tela anterior desprezando todas as alterações do formulário.</li>
+
+
+                                        <li>Botão <strong
+                                                style="background:rgb(0, 153, 255); color:white;">Salvar</strong> Salva
+                                            o conteúdo do formulário e cria a Tarefa na Fila selecionada.</li>
+
+                                        <li></li>
+                                    </ul>
+
+                                </ol>
+
+                                <h4 class="subtitle is-5 dark-text">2.5 Arquivar (Tarefas)</h4>
+
+                                <ol>
+                                    <li>O conceito de <strong>Arquivar Tarefas</strong> se aplica em duas situações:
+                                    </li>
+                                    <ul>
+                                        <li><strong>Descartar Tarefa:</strong> Utiliza-se esta opção quando tem-se uma
+                                            tarefa que não será mais utilizada e precisa-se descartá-la(excluir) da
+                                            Lista. Por questões Técnicas o sistema não permite excluir Tarefas. A única
+                                            forma de <strong>sumir</strong> com uma Tarefa de uma Lista é
+                                            <strong>Arquivando-a</strong>. As <strong>Tarefas arquivadas</strong>
+                                            continuam existindo, porém em um espaço como se fosse um arquivo morto,
+                                            podendo estas ser recuperadas na integra(desarquivadas) a qualquer momento.
+                                        </li>
+
+                                        <li><strong>Arquivar Tarefas Concluídas:</strong> Para que a <strong>Lista de
+                                                Tarefas Concluidas</strong> não cresca indefinidamente, utiliza-se o
+                                            recurso de <strong>Arquivar Tarefas</strong>. Como mencionado anteriormente,
+                                            o arquivo morto permite manter o histórico e possibilita consultas de
+                                            Tarefas realizadas, ou até mesmo a recuperação (desarquivamento) de Tarefas.
+                                        </li>
+                                    </ul>
+
+                                    <img style="width: 90%;"
+                                        src="/dist/assets/img/kanban/13.05.10-arquivados-tarefa-arquivar.png " alt="">
+                                    <h8 style="margin-left: 22px;">Figura-11 – Kanban – Arquivar Tarefas</h8>
+
+                                    <li>O botão de <strong>[ Arquivar Tarefa ]</strong> só estará visível quando
+                                        edita-se uma Tarefa existente. Ver tela acima com seta em vermelho indicando o
+                                        Ícone de <strong>[ Arquivar Tarefa ]</strong>.</li>
+
+                                    <li>Ao clicar no botão <strong>[ Arquivar Tarefa ]</strong> o sistema abrirá uma
+                                        janela para confirmar a operação de <strong>Arquivar Tarefa</strong>.</li>
+                                    <ul>
+                                        <li>Para confirmar a operação de <strong>Arquivar Tarefa</strong> clique em
+                                            <strong>[ SIM ]</strong>.
+                                        </li>
+
+                                        <li>Para cancelar a operação de <strong>Arquivar Tarefa</strong> clique em
+                                            <strong>[ Não ]</strong>.
+                                        </li>
+                                    </ul>
+                                </ol>
+
+                                <h4 class="subtitle is-5 dark-text">2.6 Visualizar Tarefas Arquivadas</h4>
+                                <ol>
+                                    <li>Para visulizar Tarefas arquivadas clicar no botão <strong
+                                            style="background:rgb(0, 153, 255); color:white;">Arquivadas</strong>conforme
+                                        indicado na tela abaixo.</li>
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/14.05.00-arquivados.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-12 – Kanban – Listar Tarefas Arquivadas</h8>
+
+                                    <li>Ao clicar no botão <strong
+                                            style="background:rgb(0, 153, 255); color:white;">Arquivadas</strong> o
+                                        sistema abrirá uma janela logo abaixo do botão, listando os <strong>Cartões das
+                                            Tarefas arquivadas (ver tela acima)</strong>.</li>
+
+                                    <li>Para <strong>Visualizar uma Tarefa</strong> clique em cima do Cartão desejado.
+                                    </li>
+
+                                    <li>Ao clicar no primeiro Cartão na janela de <strong>Arquivadas</strong>, o sistem
+                                        mostra a visualização da Tarefa conforme tela abaixo:
+                                    </li>
+
+                                    <img style="width: 90%;"
+                                        src="/dist/assets/img/kanban/15.05.20-arquivados-tarefa-desarquivar.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-13 – Kanban – Tarefas Desarquivar</h8>
+                                </ol>
+
+                                <h4 class="subtitle is-5 dark-text">2.7 Desarquivar Tarefas</h4>
+                                <ol>
+                                    <li>Para <strong>Desarquivar</strong> uma Tarefas clicar no ícone <strong>[
+                                            Desarquivar
+                                            Tarefa ]</strong> conforme indicado pela seta no canto superior direito da
+                                        tela
+                                        acima (Figura-13).</li>
+                                    <li>O sistema irá abrir uma janela para confirmar o Desarquivamento.</li>
+                                    <ul>
+                                        <li>Clique em <strong>[ SIM ] para Desarquivar</strong>.</li>
+                                        <li>Clique em <strong>[ NÃO ] para Cancelar a operação de Desarquivar</strong>.
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    <li>Ao <strong>Desarquivar</strong> uma Tarefa o sistema retorna-a para a
+                                        <strong>Fila a
+                                            qual esta pertencia no momento da operação de Arquivamento</strong>.
+                                    </li>
+                                    <li>A tela abaixo demonstra o resultado da operação de <strong>Desarquivar
+                                            Tarefa</strong> sendo indicado a movimentação do Cartão da Tarefa de [
+                                        Aquivada]
+                                        para a Lista [ Concluído ].</li>
+                                    <li>Para entender melhor compare a Tela da Figura-14 com a tela da Figura-12.</li>
+                                </ol>
+                                <img style="width: 90%;"
+                                    src="/dist/assets/img/kanban/16.05.22-Tarefa-desarquivada-2.png " alt="">
+                                <h8 style="margin-left: 25px;">Figura-14 – Kanban – Tarefa Desarquivada</h8>
+
+                                <h4 class="subtitle is-5 dark-text">2.8 Configurações</h4>
+                                <ol>
+                                    <li>Ao clicar no ícone <strong>[ Configurações ]</strong> o sistema mostra a janela
+                                        com as <strong>opções [Editar Quadro Kanban, Excluir Quadro kanban]
+                                        </strong>conforme mostrado na tela abaixo:</li>
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/17.06.00-configuracoes.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-15 – Kanban – Quadro – Configurações</h8>
+
+                                    <li>A opção <strong>Editar Quadro Kanban</strong> </li>
+                                    <ul>
+                                        <li>Permite editar o <strong>Título e a Descrição</strong> do Quadro em uso no
+                                            momento.</li>
+                                        <li>Para <strong>validar as alterações</strong> clique no botão <strong>[ Salvar
+                                                ]</strong>.</li>
+                                        <li>Para <strong>sair sem gravar</strong> clicar no icone <strong>[ X ]
+                                            </strong>no canto superior direito da janela.</li>
+                                    </ul>
+
+                                    <li>A opção <b>Excluir Quadro kanban</b></li>
+                                    <ul>
+                                        <li>Permite excluir o Quadro em uso.</li>
+                                        <li>O sistema só permite excluir o Quadro se este estiver vazio, ou seja, não
+                                            pode ter nenhuma Lista cadastrada e nenhum Cartão de tarefa Arquivado.</li>
+                                    </ul>
+                                </ol>
+
+                                <h4 class="subtitle is-5 dark-text">2.9 Criar Tarefa a partir do Chat de atendimento
+                                </h4>
+                                <ol>
+                                    <li>O sistema permite criar tarefas a partir do <strong>Chat de
+                                            atendimento</strong>, clicando no botão <b
+                                            style="color: Red; background-color: white;">&nbsp; Tarefa &nbsp;</b>. </li>
+                                    <li>Clique no botão <b style="color: Red; background-color: white;">&nbsp;
+                                            Ações/Tarefa &nbsp;</b>, localizado dentro do quadro vermelho no canto
+                                        direito inferior, como mostrado na tela abaixo.</li>
+
+                                    <img style="width: 90%;"
+                                        src="/dist/assets/img/kanban/18.07.00-chat-selecionar-tarefa.png " alt="">
+                                    <h8 style="margin-left: 22px;">Figura-16 – Chat – Tarefa</h8>
+
+                                    <li>Após selecionar o botão <b style="color: Red; background-color: White;">&nbsp;
+                                            Tarefa &nbsp;</b> na tela acima, o sistema mostrará a tela abaixo:</li>
+
+                                    <img style="width: 90%;"
+                                        src="/dist/assets/img/kanban/19.07.03-chat-tarefa-vinculada-contato.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-17 – Chat – Tarefas do Contato</h8>
+                                    <li>Observar na tela acima, dentro do retângulo em vermelho, que o sistema mostra as
+                                        Tarefas vinculadas ao respectivo Contato.
+                                    </li>
+                                    <li>Clique no botão <b style="color: DodgerBlue; background-color: White;">&nbsp; +
+                                            Inserir Tarefa &nbsp;</b> (indicado pela seta vermelha dentro do retângulo)
+                                        para inserir uma nova Tarefa. Após isso será mostrado o formulário para inserir
+                                        nova Tarefa, conforme tela abaixo:</li>
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/20.03.00-tarefa-incluir.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-18 – Chat – Adicionar Tarefa</h8>
+                                    <li>Preencher os campos da tela observando:</li>
+                                    <ul>
+                                        <li>Campo <strong>Nome</strong>: Informe o Nome (Título) da Atividade. </li>
+                                        <li>Campo <strong>Descrição</strong>: Descrever o contexto da atividade e oque
+                                            deverá ser feito.</li>
+                                        <li>Adicionar <strong>Anexo</strong>: Permite adicionar arquivos anexo (Doc,
+                                            imagem, pdf, zip).</li>
+                                        <li>Adicionar <strong>Notas</strong>: Permite registrar observações e os
+                                            trabalhos executados.</li>
+                                        <li>Campo <strong>Quadro</strong>: Selecione um Quadro existente no Kanban.</li>
+                                        <li>Campo <strong>Lista</strong>: Selecione uma Lista para o Quadro selecionado
+                                            no campo anterior.</li>
+                                        <li>Campo <strong>Prazo</strong>: Permite informar uma <strong>Data para
+                                                conclusão</strong>, porém não é obrigatório o preenchimento.</li>
+                                        <li>Campo <strong>Prioridade</strong>: Informe a <strong>Prioridade desta
+                                                tarefa</strong> a partir de uma lista padronizada.</li>
+                                        <li>Campo <strong>Tags</strong>: Permite selecionar as <strong>Tags a qual esta
+                                                tarefa estará vinculada</strong>. As tags que aparecem para escolha
+                                            devem ser cadastradas antecipadamente em <strong>Configurações /Parametros /
+                                                Tags</strong>. O preenchimento de Tag não é obrigatório.</li>
+                                        <li>Campo <strong>Contato</strong>: Permite selecionar um ou mais
+                                            <strong>Contatos</strong> para vínculo com a tarefa. O preenchimento deste
+                                            campo não é obrigatório.
+                                        </li>
+                                        <li>Campo <strong>Cliente</strong>: Permite selecionar o
+                                            <strong>Cliente</strong> da tarefa (cadastrado no cadastro de Clientes). O
+                                            preenchimento deste campo não é obrigatório.
+                                        </li>
+                                        <li>Campo <strong>Responsável</strong>: Permite selecionar o
+                                            <strong>Responsável</strong> pela Tarefa a partir dos Membros adicionados no
+                                            Quadro.
+                                        </li>
+                                        <li>Campo <strong>Participante</strong>: Permite selecionar os
+                                            <strong>Participantes</strong> da Tarefa a partir dos membros adicionados no
+                                            Quadro. O preenchimento não é obrigatório.
+                                        </li>
+                                        <li>Botão <b style="color: white; background-color: Gray;">&nbsp; Cancelar
+                                                &nbsp;</b>: Volta a tela anterior desprezando todas as alterações do
+                                            formulário.</li>
+                                        <li>Botão <b style="color: white; background-color: DodgerBlue;">&nbsp; Salvar
+                                                &nbsp;</b>: Salva o conteúdo do formulário e cria a Tarefa na Fila
+                                            selecionada.</li>
+                                    </ul>
+
+
+                                </ol>
+
+                                <h4 class="subtitle is-5 dark-text">2.10 Criar Tarefa a partir do Contato</h4>
+                                <ol>
+                                    <li>O sistema permite criar Tarefas a partir do <strong>Contato</strong>. Ver tela
+                                        abaixo:</li>
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/21.08.00-contato-tarefa.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-19 – Contato – Tarefa</h8>
+                                    <li>Note que dentro do retângulo vermelho estão listadados os Cartões com Tarefas
+                                        vinculadas ao respectivo Contato.</li>
+                                    <li>Clique no botão <b style="color: dodgerblue; background-color: White;">&nbsp;
+                                            Inserir Tarefa &nbsp;</b> indicado pela seta vermelha (tela acima) para
+                                        inserir uma nova Tarefa. Após isso aparecerá o formulário conforme tela abaixo:
+                                    </li>
+
+                                    <img style="width: 90%;" src="/dist/assets/img/kanban/21.03.00-tarefa-incluir.png "
+                                        alt="">
+                                    <h8 style="margin-left: 22px;">Figura-20 – Contato – Adicionar Tarefa</h8>
+                                    <li>Preencher os campos da tela observando:</li>
+                                    <ul>
+                                        <li>Campo <strong>Nome</strong>: Informe o Nome (Título) da Atividade. </li>
+                                        <li>Campo <strong>Descrição</strong>: Descrever o contexto da atividade e oque
+                                            deverá ser feito.</li>
+                                        <li>Adicionar <strong>Anexo</strong>: Permite adicionar arquivos anexo (Doc,
+                                            imagem, pdf, zip).</li>
+                                        <li>Adicionar <strong>Notas</strong>: Permite registrar observações e os
+                                            trabalhos executados.</li>
+                                        <li>Campo <strong>Quadro</strong>: Selecione um Quadro existente no Kanban.</li>
+                                        <li>Campo <strong>Lista</strong>: Selecione uma Lista para o Quadro selecionado
+                                            no campo anterior.</li>
+                                        <li>Campo <strong>Prazo</strong>: Permite informar uma <strong>Data para
+                                                conclusão</strong>, porém não é obrigatório o preenchimento.</li>
+                                        <li>Campo <strong>Prioridade</strong>: Informe a <strong>Prioridade desta
+                                                tarefa</strong> a partir de uma lista padronizada.</li>
+                                        <li>Campo <strong>Tags</strong>: Permite selecionar as <strong>Tags a qual esta
+                                                tarefa estará vinculada</strong>. As tags que aparecem para escolha
+                                            devem ser cadastradas antecipadamente em <strong>Configurações /Parametros /
+                                                Tags</strong>. O preenchimento de Tag não é obrigatório.</li>
+                                        <li>Campo <strong>Contato</strong>: Permite selecionar um ou mais
+                                            <strong>Contatos</strong> para vínculo com a tarefa. O preenchimento deste
+                                            campo não é obrigatório.</li>
+                                        <li>Campo <strong>Cliente</strong>: Permite selecionar o
+                                            <strong>Cliente</strong> da tarefa (cadastrado no cadastro de Clientes). O
+                                            preenchimento deste campo não é obrigatório.</li>
+                                        <li>Campo <strong>Responsável</strong>: Permite selecionar o
+                                            <strong>Responsável</strong> pela Tarefa a partir dos Membros adicionados no
+                                            Quadro.</li>
+                                        <li>Campo <strong>Participante</strong>: Permite selecionar os
+                                            <strong>Participantes</strong> da Tarefa a partir dos membros adicionados no
+                                            Quadro. O preenchimento não é obrigatório.</li>
+                                        <li>Botão <b style="color: White; background-color: Gray;">&nbsp; Cancelar
+                                                &nbsp;</b>: Volta a tela anterior desprezando todas as alterações do
+                                            formulário.</li>
+                                        <li> Botão <b style="color: white; background-color: DodgerBlue;">&nbsp; Salvar
+                                                &nbsp;</b>: Salva o conteúdo do formulário e cria a Tarefa na Fila
+                                            selecionada.</li>
+                                    </ul>
+
+                                </ol>
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="maischat-copyright">
+            <a href="https://www.linkedin.com/company/maischatbr/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                    height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg></a>
+            <a href="https://instagram.com/maischatbr?igshid=YmMyMTA2M2Y="><svg xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg></a>
+            <a href="https://api.whatsapp.com/send/?phone=554840425300&text&type=phone_number&app_absent=0"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                </svg></i></a>
+            <hr>
+            <p class="copyright"><em>Tecnologia</em><img style="width: 11px; margin: 0 0.1rem 0 0.5rem;"
+                    src="/dist/assets/img/Icone_mais_chat_footer.svg" alt=""> <em>+Chat</em></p>
+        </div>
+    </footer>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/core.js"></script>
+</body>
+
+</html>

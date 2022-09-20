@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Help Center</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="\node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1aa107ef78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/assets/css/app.css">
+    <link id="theme-sheet" rel="stylesheet" href="/dist/assets/css/orange.css">
+</head>
+
+<body class="is-theme-core">
+
+    <div class="pageloader"></div>
+    <div class="infraloader is-active"></div>
+
+    <div class="hero is-theme-primary">
+
+        <div id="main-hero" class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered pt-40">
+                    <div class="column"></div>
+                    <div class="column is-9">
+                        <div class="help-header">
+                            <img src="assets/img/cabecalho.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section help-section is-relative">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column"></div>
+                <div class="column is-9 help-container">
+
+                    <nav class="breadcrumbs">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="pchat.html">Painel do Chat</a></li>
+                            <li>Sessão de Chat</li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="flex-card single-help-article">
+                        <div class="article-inner">
+                            <!-- Article meta -->
+                            <h2 class="title is-3 dark-text">Utilizando o painel de Chats</h2>
+                            <h3 class="subtitle is-5">Entenda o funcionamento do Chat</h3>
+
+                            <div class="content">
+                                <h4 class="subtitle is-5 dark-text">1. Introdução</h4>
+                                <p>Os Chats são atendimentos efetuados a partir de chamadas efetuadas através de canais
+                                    de mídias sociais (Whatsapp, Instagram, Facebook, WebChat e/ou outros), ou chamadas
+                                    efetuadas através do Painel de atendimento Mais Chat para um contato de Whatsapp.
+                                    Ao escolher a opção de Chat no menu lateral, o sistema apresentará a tela de chat,
+                                    conforme figura abaixo:</p>
+                                <img src="/dist/assets/img/paineldochat/01.01-chat-menus-cinza.png" alt="">
+                                <h8>Figura 1 - Tela de Chat</h8>
+                                <p>Esta tela apresenta um menu horizontal em cinza (indicado pela seta 1) com duas abas:
+                                    Chats (marcador 2) e Contatos (marcador 3).</p>
+
+                                <ol>
+
+                                    <li><strong>Aba Chat:</strong> Dentro da aba <strong>CHAT</strong>apresenta-se
+                                        as opções (abas) <strong>Bot, Fila e Meus Chats,</strong>(figura acima)
+                                        onde:</li>
+                                    <ul>
+                                        <li><strong>Aba Bot:</strong>Lista na vertical todos os chats de entrada que
+                                            estão preso no Bot e ainda não vieram para as filas de atendimento. Esta
+                                            opção (Bot) só estará visível para o usuário Administrador.</li>
+
+                                        <li><strong>Aba Fila:</strong>Lista na vertical todos os chats de entrada que
+                                            estão na fila para serem atendidos</li>
+
+                                        <li><Strong>Aba Meus Chats:</Strong>Lista na vertical todos os chats assumidos
+                                            pelo Agente logado.</li>
+                                    </ul>
+
+                                    <li><strong>Aba Contato:</strong>Esta opção permite iniciar um Chat com um Contato.
+                                        Neste caso o Contato deverá estar previamente cadastrado e possuir whatsapp
+                                        vinculado ao seu número de telefone.</li>
+                                </ol>
+
+                                <h4 class="subtitle is-5 dark-text">2. Chats na Fila para atendimento</h4>
+                                <img src="/dist/assets/img/paineldochat/2.00-chat-menus.png" alt="">
+                                <h8>Figura 2 - Tela de Chat - Fila</h8>
+                                <ol>
+                                    <li>Ao entrar na tela de Chat acima, o sistema mostra por padrão a Aba Chat
+                                        selecionada. Observar que embaixo da <strong>Aba Chat</strong> possui uma
+                                        barrinha branca indicando que a aba Chat está selecionada.</li>
+                                    <li>Para selecionar qualquer das abas de menu horizontal deverá ser clicado em cima
+                                        do título da aba.</li>
+                                    <li>Ao selecionar a <strong>aba Chat</strong> o sistema mostra por padrão a
+                                        <strong>aba Fila</strong> e lista todos os chats de entrada aguardando na
+                                        <strong>Fila</strong> para serem atendidos.
+                                    </li>
+                                    <li>Se o usuário estiver vinculado a mais de uma fila, aparecerá as filas para que o
+                                        atendente/agente possa escolher qual fila quer visualizar os chats.</li>
+                                    <li>Na <strong>aba Fila,</strong> pode-se <strong>assumir um chat</strong> ou
+                                        pode-se <strong>filtrar os chats</strong></li>
+                                    <li>Veja a animação abaixo:</li>
+                                </ol>
+
+                                <video controls src="/dist/assets/img/paineldochat/3.acessando_chat.mp4"></video>
+
+                                <h4 class="subtitle is-5 dark-text">2.1. Assumir um chat para atendimento</h4>
+                                <p>Assista a animação abaixo (item 2.1.1) ou se preferir utilize o <strong>passo a passo
+                                        para maiores detalhes no item 2.1.2</strong>.</p>
+
+                                <h4 class="subtitle is-5 dark-text">2.1.1 Assumir um chat – vídeo com animação</h4>
+                                <video controls src="/dist/assets/img/paineldochat/4.assumir_chat.mp4"></video>
+
+                                <h4 class="subtitle is-5 dark-text">2.1.2 Assumir um chat – Passo a passo</h4>
+                                <p>Para assumir um chat na fila para efetuar o atendimento seguir os seguintes passos:
+                                </p>
+                                <ol>
+                                    <li>Clicar no chat escolhido <strong>(ver Figura 2 acima, o chat no quadro em
+                                            vermelho)</strong>e aparecerá a tela conforme Figura-3 abaixo, com os dados
+                                        do chat e com a mensagem para assumir o atendimento:</li>
+
+
+                                    <img src="/dist/assets/img/paineldochat/5.chat-assumir.png" alt="">
+                                    <h8>Figura 3 - Tela de Chat - Assumir</h8>
+
+
+                                    <li>Clique no botão <strong style="background:orange; color:white;">Assumir
+                                            atendimento</strong>indicado pela seta vermelha e aparecerá a janela de
+                                        confirmação abaixo:</li>
+                                    <img style="width: auto; margin-left: 30%;"
+                                        src="/dist/assets/img/paineldochat/6-chat-assumir-mensagem.png" alt="">
+
+                                    <li>Clique no botão <strong style="background:grey; color:white;">Cancelar</strong>
+                                        para não assumir o atendimento</li>
+
+                                    <li>Clique no botão <strong style="background:blue; color:white;">Ok</strong> para
+                                        confirmar e assumir o atendimento</li>
+
+                                    <li>Após assumir o atendimento o sistema mostrará a tela da Figura 4 abaixo,
+                                        disponibilizando campo para edição e envio de mensagens, anexos e audio.</li>
+
+                                    <img src="/dist/assets/img/paineldochat/7-chat.png" alt="">
+                                    <h8> Figura 4 - Tela de Chat - Assumir</h8>
+                                </ol>
+                                <h4 class="subtitle is-5 dark-text">2.1.3. Aba chat / Meus Chats</h4>
+                                <h4 class="subtitle is-5 dark-text">2.1.3.1. Lista de Chats dinâmica</h4>
+
+                                <ol>
+                                    <li>A visualização dos chats na aba “Meus Chats” são listados obedecendo alguns
+                                        critérios de acordo com as interações, tanto do contato como do atendente. Este
+                                        comportamento na visualização da lista de chat torna-se desta forma dinâmico,
+                                        proporcionando maior praticidade no atendimento.</li>
+
+                                    <li>A seguir listamos alguns comportamentos disponibilizados utilizando balões
+                                        coloridos para: <strong>“Novos chats assumidos”, “Chats com novas conversas não
+                                            lidas”, “Chats com conversas lidas e não respondidas” e “Chats transferidos
+                                            por outros usuários”.</strong> </li>
+                                    <ul>
+                                        <li><strong>Novos chats assumidos: </strong>os novos chats assumidos vão
+                                            entrando em “Meus chats” no topo da lista de chats.
+                                        </li>
+                                        <li><strong>Chats com novas conversas não lidas:</strong>Aparece um
+                                            <strong>balão vermelho</strong> indicando ao centro o número de mensagens
+                                            novas.
+                                        </li>
+                                        <li><strong>Chats com conversas lidas e não respondidas:</strong> Ao visualizar
+                                            um chat com novas mensagens (balão vermelho), o sistema automaticamente muda
+                                            a cor do balão para laranja, permanecendo assim até que a mensagem seja
+                                            respondida, sendo então removido o balão.</li>
+
+                                        <li><strong>Chats transferidos por outros usuários:</strong>Ao receber um chat
+                                            transferido por outro usuário, o chat recebido fica com a cor de fundo cinza
+                                            e aparece a marcação <img style="width:25px ;"
+                                                src="/dist/assets/img/paineldochat/8-botao-transferir-1.png" alt="">
+                                            indicando que foi uma transferência. Chats transferidos sempre ficarão no
+                                            topo da lista até serem visualizados e/ou respondido.</li>
+                                    </ul>
+                                    <li>Ao passar o mouse em cima de cada balão o sistema mostrará uma mensagem
+                                        indicando o status do respectivo balão.</li>
+                                    <li>Os chats que vão tendo interações dos contatos durante o atendimento o sistema
+                                        vai movendo-os para o topo da lista e acionando os balões coloridos como
+                                        marcadores de status.</li>
+                                </ol>
+
+                                <h4 class="subtitle is-5 dark-text">2.1.3.2. Ações que podem ser executadas no chat</h4>
+
+                                <ol>
+                                    <li>A <strong>Tela de Chat</strong> está dividida em três painéis verticais, sendo:
+                                        <ul>
+                                            <li><strong>Painel da esquerda:</strong> Lista de Chats em atendimento.</li>
+                                            <li><strong>Painel do centro:</strong> Envio e recebimento de conteúdo
+                                                (mensagens, audio, anexos).</li>
+                                            <li><strong>Painel da direita:</strong> Dados do Contato.</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Origem de um chat:</b>
+                                        <ul>
+                                            <li>O atendimento de um chat começa inicialmente pelo BOT, o qual cria um
+                                                protocolo para identificação do chat.</li>
+                                            <li>Após o contato navegar pelo fluxo do BOT e preencher os dados
+                                                solicitados, o chat vai para uma fila de atendimento.</li>
+                                            <li>O atendente/agente assume o chat para continuar o dialogo durante o
+                                                atendimento.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Enviando <b>mensagem de Texto</b>.
+                                        <ul>
+                                            <li>Após assumir o chat, o Agente irá interagir com o Contato digitando
+                                                <b>mensagens</b> no campo ao lado direito do ícone <img
+                                                    style="width: 18px ;"
+                                                    src="/dist/assets/img/paineldochat/9.1.03-chat-menus-anexo.png"
+                                                    alt=""> <b>(indicado pela seta
+                                                    número 1)</b>, onde aparece a mensagem<b> &#8220;Digite
+                                                    aqui&#8230;&#8221;</b> .
+                                            </li>
+                                            <li>Para <b>enviar a mensagem</b>, clique no í<b>cone <img
+                                                        style="width: 18px ;"
+                                                        src="/dist/assets/img/paineldochat/9.2.02-chat-menus-enviar-mensagem.png"
+                                                        alt=""> (indicado pela seta de
+                                                    número 3)</b>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Enviando <b>arquivos anexos</b>.
+                                        <ul>
+                                            <li>Clicar no ícone <img style="width: 18px ;"
+                                                    src="/dist/assets/img/paineldochat/9.1.03-chat-menus-anexo.png"
+                                                    alt="">
+                                                indicado pela seta
+                                                vermelha de número 1 e se abrirá uma janela para escolha do arquivo a
+                                                ser anexado.</li>
+                                            <li>Os arquivos aceitos são: texto (txt, PDF, Doc, Docx, Rtf), Imagens (jpg,
+                                                png, tiff), Arquivos compactados (Zip, Rar).</li>
+                                            <li>Limitar o tamanho do arquivo anexo em 6 Mbytes.</li>
+                                            <li><b>IMPORTANTE:</b> Não é aceito o envio de vídeo, independente de
+                                                formato.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Enviando <b>Audio</b>.
+                                        <ul>
+                                            <li>Clicar no ícone <img style="width: 18px ;"
+                                                    src="/dist/assets/img/paineldochat/9.3.04-chat-menus-audio.png"
+                                                    alt=""> indicado pela seta
+                                                vermelha número 2 e se abrirá um componente para gravação do audio.</li>
+                                            <li>Clique no botão <b style="color: white; background-color: dodgerblue;">
+                                                    Parar </b> para terminar o <b>Audio</b> e o sistema mostrará um a
+                                                ferramenta de escuta de audio para teste antes de enviar o <b>Audio</b>.
+                                            </li>
+                                            <li>Para enviar o <b>Audio</b> clique em <b
+                                                    style="color: white; background-color: dodgerblue;"> Enviar </b>.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <h4 class="subtitle is-5 dark-text">2.1.3.3. Meus chats &#8211; Barra de ferramentas
+                                </h4>
+                                <p>A figura abaixo mostra a barra de ferramenta no destaque do retângulo em vermelho.
+                                </p>
+                                <img src="/dist/assets/img/paineldochat/10.05.23.3-meus-chats-barra-ferramenta.png"
+                                    alt="">
+                                <h8>Figura 4 Meus chats – Barra de ferramenta</h8>
+                                <p><strong>Descrição das ferramentas:</strong></p>
+                                <ol>
+                                    <li><strong>Pesquisa de Chat pelo nome do contato</strong> através do campo <img
+                                            style="width: 85px ;"
+                                            src="/dist/assets/img/paineldochat/11.05.05.23.2-meus-chats-filtro-busca-lupa.png"
+                                            alt=""></li>
+                                    <li><strong>Ícone</strong> <img style="width: 150px ;"
+                                            src="/dist/assets/img/paineldochat/12.05.05.23.4-meus-chats-barra-ferramenta-icone-favorito.png"
+                                            alt=""> : este ícone ativa e desativa o filtro de <strong>chats</strong>
+                                    </li>
+                                    <li><strong>Ícone</strong><img style="width: 130px; "
+                                            src="/dist/assets/img/paineldochat/13.05.05.23.5-meus-chats-barra-ferramenta-icone-conversas-nao-respondidas.png"
+                                            alt=""> : para ativar/desativar este filtro clique no ícone indicado.</li>
+                                    <li><strong>Ícone</strong><img style="width: 130px ;"
+                                            src="/dist/assets/img/paineldochat/14.05.05.23.6-meus-chats-barra-ferramenta-icone-conversas-nao-lidas.png"
+                                            alt="">: para ativar/desativar este filtro clique no ícone indicado.
+                                    </li>
+                                    <li><strong>Ícone</strong><img style="width: 75px ;"
+                                            src="/dist/assets/img/paineldochat/15.05.05.23.7-meus-chats-barra-ferramenta-icone-filtro-pesquisa.png"
+                                            alt="">:
+                                        <ul>
+                                            <li>Este ícone abre uma janela com os campos “Filas”, “Tags” e “Canais” que
+                                                podem compor o filtro de pesquisa, com a mesclagem de todos os campos
+                                                preenchidos.</li>
+
+                                            <li>Veja janela de pesquisa abaixo:</li>
+                                            <img style="width: 50%; margin-left: 25%;"
+                                                src="/dist/assets/img/paineldochat/16.05.05.23.8-meus-chats-barra-ferramenta-janela-filtro.png"
+                                                alt="">
+                                            <h8 style="margin-left: 25%;">Figura 4 – Janela de filtros de chats</h8>
+                                            <li>Após selecionar os campos de filtro clique no botão <img style="width: 80px;" src="/dist/assets/img/paineldochat/17.05.05.23.9-meus-chats-barra-ferramenta-botao-aplicar-filtro.png" alt=""> e será mostrado somente os chats que satisfazem a combinação dos campos de filtro. </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <h4 class="subtitle is-5 dark-text">2.1.4. Editar dados do contato</h4>
+                                <p>Na figura abaixo temos o <strong>“Painel de Dados”</strong> extraido da tela de Chat (Meus Chats).</p>
+                                <img src="/dist/assets/img/paineldochat/18.05.05.22.2-chat-editar-contato.png" alt="">
+                                <h8>Figura 5 – Painel Dados do contato</h8>
+                                <ul>
+                                    <li>Para <strong>editar dados do contato</strong>, clicar no ícone de edição <img style="width: 18px;" src="/dist/assets/img/paineldochat/19.01.07-chat-menus-lapis2.png" alt=""> conforme <strong>marcador 1 em vermelho</strong> na figura acima.</li>
+                                    <li>Ao abrir a janela de edição do contato, faça as alterações e clique no botão <strong style="background:blue; color:white;">Salvar</strong> no rodapé da janela.</li>
+                                </ul>
+                                
+                                <h4 class="subtitle is-5 dark-text">2.1.5. Adicionar TAGs</h4>
+                                <p>Durante o atendimento de um chat pode-se necessitar vincular Tags no Contato e/ou no protocolo. Isto é possível a partir da tela de atendimento do <strong>chat/conversa</strong>, conforme mostrado abaixo no painel de dados do contato:</p>
+                                <img src="/dist/assets/img/paineldochat/20.05.05.22.1-tag-protocolo-contato.png" alt="">
+                                <h8>Figura-5 – Painel Dados do contato</h8>
+
+                                <ol>
+                                    <li><strong>Adicionar TAGs no Protocolo</strong>
+                                        <ul>
+                                            <li>Para <strong>adicionar TAGs no respectivo protocolo</strong>, clicar no ícone de edição <img style="width: 18px;" src="/dist/assets/img/paineldochat/19.01.07-chat-menus-lapis2.png" alt=""> conforme <strong> marcador 1 em vermelho</strong>na figura acima.</li>
+                                            <li>Ao abrir a janela selecione uma ou mais TAG(s) e clique no botão <strong style="background:blue; color:white;">Salvar</strong></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><strong>Adicionar TAGs no Contato:</strong>
+                                        <ul>
+                                            <li>Para <strong>adicionar TAGs no respectivo contato</strong> clicar no ícone de edição <img style="width: 18px;" src="/dist/assets/img/paineldochat/19.01.07-chat-menus-lapis2.png" alt=""> conforme <strong> marcador 2 em vermelho</strong>na figura acima.</li> </li>
+                                            <li>Ao abrir a janela selecione uma ou mais TAG(s) e clique no botão <strong style="background:blue; color:white;">Salvar</strong></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><strong>Visualizar TAgs Coloridas:</strong>
+                                        <ul>
+                                            <li>Para visualizar os chats com tags coloridas, deve ser configurado as TAGs preivamente.</li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ol>
+                                 <h4    class="subtitle is-5 dark-text">2.1.6. Favoritar Protocolo/Chat</h4>
+                                <p>Estando em uma tela de chat para interação, o agente/atendente poderá a qualquer momento favoritar ou desfavoritar um chat clicando no botão de favoritos <img style="width: 18px;" src="/dist/assets/img/paineldochat/21.05.05.24.2-meus-chats-dados-contato-icone-favorito.png" alt="">, conform figura abaixo:</p>
+                                <img src="/dist/assets/img/paineldochat/22.05.05.24.1-meus-chats-dados-contato-favoritar-chat.png" alt="">
+                                <h8>Figura-5 – Dados do contato - Favoritar</h8>
+
+                                <h4 class="subtitle is-5 dark-text">2.2. Filtrar Chats</h4>
+                                <p>Na <strong>aba chat -> Fila</strong>, pode-se filtrar os chats da Fila utilizando o ícone <img style="width: 15px;" src="/dist/assets/img/paineldochat/23.01.05-chat-menus-filtro.png" alt="">conforme indicado pela seta vermelha na figura abaixo:</p>
+                                <img src="/dist/assets/img/paineldochat/24.03.01-chat-filtro.png" alt="">
+                                <h8>Figura-5 – Tela de Chat – Filtro</h8>
+                                <ul>
+                                    <li>Os <strong>Filtro [Filas,Tags e Canais]</strong> mostrados na tela acima, poderão ser aplicados individualmente ou em conjunto.</li>
+                                    <li>Após selecionar os filtros desejados, clicar no botão <strong style="background:orange; color:white;">Aplicar Filtro</strong> e o sistema fechará a tela de filtros e mostrará os chats filtrados.</li>
+                                    <li>Para fechar a janela de filtros, clicar no botão <strong style="background:orange; color:white;">Cancelar</strong></li>
+                                </ul>
+                                
+                                <h4 class="subtitle is-5 dark-text">3. Informações do Contato</h4>
+                                <p>Na tela da figura abaixo, o quadro a direita mostra as informações do Contato (remoto) do chat.</p>
+                                <img  src="/dist/assets/img/paineldochat/25.03.02-chat-Informacoes-contato.png" alt="">
+                                <h8>Figura-6 – Tela de Chat – Contato</h8>
+
+                                <h4 class="subtitle is-5 dark-text">3.1 Editando o Contato</h4>
+                                <p>Para editar os dados do Contato, clique no ícone <img style="width: 18px;" src="/dist/assets/img/paineldochat/19.01.07-chat-menus-lapis2.png" alt=""> localizado à direita do nome do Contato, que se abrirá uma janela com os dados do Contato para edição. Após as alterações, clique no botão Gravar e voltará para a tela acima.</p>
+
+                                <h4 class="subtitle is-5 dark-text">3.2 Vinculando o Contato a um Cliente</h4>
+                                <p>Para vincular o Contato com um Cliente, posicione o apontador do mouse na mensagem <strong>"não informado"</strong> e clicar em cima que se abrirá uma janela para pesquisar o Cliente. Após selecionar o cliente, clique em <strong style="background:blue; color:white;">Gravar</strong> e o sistema fechará a janela e voltará para a tela acima. </p>
+
+                                <h4 class="subtitle is-5 dark-text">3.3 Excluindo o vínculo do Contato com o Cliente</h4>
+                                <p>Para <strong>excluir o vínculo do Contato com o Cliente</strong>, basta clicar no <strong>“X”</strong> ao lado direito do nome do Cliente e confirmar a exclusão do vínculo. </p>
+
+                                <h4 class="subtitle is-5 dark-text">4.Barra de Ferramentas do Chat</h4>
+                                <p>O menu de ferramentas do Chat está localizado no rodapé direito da página, abaixo do quadro de informações do Contato. Na Barra de Ferramenta, ao passar o apontador do mouse sobre qualquer dos botões, o sistema mostra a função do botão conforme visto nas figuras abaixo na descrição de cada botão:</p>
+
+                                <h4>4.1. Botão [ Encerrar Protocolo ]</h4>
+                                <img style="width: 50%; margin-left: 25%;" src="/dist/assets/img/paineldochat/26.04.01-chat-botao-encerrar.png" alt="">
+                                <ul>
+                                    <li>Encerra o Chat e envia mensagem de encerramento ao Contato.</li>
+                                    <li>Clicar no Play para assistir o video abaixo:</li>
+
+                                </ul>
+
+                                <video controls src="/dist/assets/img/paineldochat/5.encerrar.mp4"></video>
+                                
+                                <h4 class="subtitle is-5 dark-text">4.2. Botão [ Transferir Atendente/Agente ]</h4>
+                                <img style="width: 50%; margin-left: 25%;" src="/dist/assets/img/paineldochat/27.04.02-chat-botao-transferir.png" alt="">
+                                <ul>
+                                    <li>Este botão permite transferir o chat para <strong>outro Agente ou para uma Fila de atendimento.</strong> Ao clicar nesse botão o sistema abrirá uma janela para escolha de uma das opções mencionadas.</li>
+                                    <li>Para <strong>transferir para um Agente,</strong> selecione o <strong>Agente</strong> na janela de escolha e clique no Botão <strong style="background:blue; color:white;">Transferir</strong> logo abaixo do Agente escolhido. </li>
+                                    <li>Para <strong>transferir para uma Fila,</strong> selecione a <strong>Fila</strong> na janela de escolha e clique no Botão <strong style="background:blue; color:white;">Transferir</strong> logo abaixo da fila escolhida.</li>
+                                    <li>Clicar no Play para assistir o vídeo abaixo.</li>
+                                </ul>
+                                <video controls src="/dist/assets/img/paineldochat/6.transferir.mp4"></video>
+
+                                <h4 class="subtitle is-5 dark-text">4.3. Botão [ Enviar Email ]</h4>
+                                <img style="width: 50%; margin-left: 25%;" src="/dist/assets/img/paineldochat/28.04.03-chat-botao-email.png" alt="">
+                                <ul>
+                                    <li>Ao clicar no botão <i class="bi bi-envelope"> E-mail</i> o sistema abrirá uma janela para envio de email. </li>
+                                    <li>Informe os campos: <strong>Destinatário, Título </strong>(já vem preenchido com sugestão) e <strong>Conteúdo do email.</strong></li>
+                                    <li>Para enviar o conteúdo (diálogos) do Chat anexado no email, selecione a opção <strong>“[ ] Enviar chat anexado ao e-mail”</strong></li>
+                                    <li>Ao terminar a edição do email, clique no botão <strong style="background:blue; color:white;">Enviar</strong></li>
+                                    <li>Após enviar o email o sistema retorna para a tela de Chat.</li>
+                                    <li>Clicar no Play para assistir o vídeo abaixo:</li>
+                                </ul>
+                                <video controls src="/dist/assets/img/paineldochat/7.enviando_e-mail.mp4"></video>
+
+                                <h4 class="subtitle is-5 dark-text">4.4. Botão [ Notas ]</h4>
+                                <img style="width: 50%; margin-left: 25%;" src="/dist/assets/img/paineldochat/29.04.04-chat-botao-notas.png" alt="">
+                                <ul>
+                                    <li>Ao clicar no botão <i class="bi bi-sticky"> Notas</i> o sistema abrirá uma janela para digitar uma Nota (mensagem). Após digitar a mensagem da Nota, clique no botão <strong style="background:green; color:white;">Salvar</strong></li>
+                                    <li>A <strong>Nota</strong> não será encaminhada para o Whatsapp do Contato.</li>
+                                    <li>A <strong>Nota</strong> aparecerá somente para os Agentes que visualizam o Chat no Painel.</li>
+                                    <li>Clicar no Play para assistir o vídeo abaixo:</li>
+                                </ul>
+                                <video controls src="https://mais.chat/wp/wp-content/uploads/2022/06/criando_notas.mp4"></video>
+
+                                <h4 class="subtitle is-5 dark-text">4.5. Botão [ Base de Conhecimento ]</h4>
+                                <img style="width: 50%; margin-left: 25%;" src="/dist/assets/img/paineldochat/30.04.05-chat-botao-base-conhecimento.png" alt="">
+                                <ul>
+                                    <li>A Base de conhecimento é um cadastro de mensagens previamente efetuado (em FAQs) e que pode ser utilizado de forma a agilizar o atendimento, permitindo pesquisar e selecionar a mensagem para envio ao contato.</li>
+                                    <li>Os <strong>FAQs (Perguntas frequentes) são utilizadas como base de conhecimento,</strong> registrando todos os questionamentos e perguntas utilizadas com frequência pelos <strong>Contatos</strong></li>
+                                    <li>Ao clicar no botão <i class="bi bi-question-square"> Base de conhecimento</i> o sistema abrirá um quadro conforme a figura abaixo:</li>
+                                </ul>
+                                <img style="width: 50%; margin-left: 25%;" src="/dist/assets/img/paineldochat/31.04.05-1-chat-botao-base-conhecimento-pesquisa.png" alt="">
+                                <ul>
+                                    <li>Clicar no ícone <img style="width: 18px;" src="/dist/assets/img/paineldochat/23.01.05-chat-menus-filtro.png" alt="Filtros"> para abrir a janela de filtro onde aparecerá as opções de filtro por <strong>[ Busca por pergunta ] e [ Categorias ].</strong></li>
+                                    <li>Para informar uma pergunta clique em cima do campo [ Busca por pergunta ] e informe o conteúdo desejado, com no mínimo 3 letras  e o sistema automaticamente  vai filtrando e mostrando as opções que contém o texto informado na pergunta.</li>
+                                    <li>Para <strong>enviar a mensagem para o Chat,</strong> clique no ícone enviar <img style="width: 18px;" src="/dist/assets/img/paineldochat/9.2.02-chat-menus-enviar-mensagem.png" alt=""> a direita da mensagem listada e escolhida.</li>
+                                    <li>Para visualizar a mensagem  completa do Faq, clique no ícone Lupa <img style="width: 18px;" src="/dist/assets/img/paineldochat/32.01.08-chat-menus-lupa.png" alt="">.</li>
+                                    <li>Para adicionar uma mensagem de Faq na sua lista de favoritos, clique no ícone Estrelinha <img style="width: 18px;" src="/dist/assets/img/paineldochat/33.04.05-3-chat-botao-base-conhecimento-estrela.png" alt="">.</li>
+                                    <li>Para visualizar as suas mensagens  favoritas, clique no botão <strong style="background:blue; color:white;">Favoritos</strong>, conforme mostrado abaixo:</li>
+                                    <li>As <strong>buscas por perguntas</strong> ou <strong>seleção de categorias,</strong> quando a opção Favorito está selecionada será feita somente na sua lista de mensagens <strong>marcadas como favoritas.</strong></li>
+                                    <li>Clicar no Play para assistir o vídeo abaixo (base de conhecimento):</li>
+                                    
+                                </ul>
+                                <video controls src="https://mais.chat/wp/wp-content/uploads/2022/06/video-base-conhecimento.mp4"></video>
+
+                                <h4 class="subtitle is-5 dark-text">4.6. Botão [ Ações / Tarefas ]</h4>
+                                <img style="width: 50%; margin-left: 25%;" src="/dist/assets/img/paineldochat/34.04.06-chat-botao-acoes-tarefas.png" alt="">
+                                <ul>
+                                    <li>Ao clicar no botão <i class="bi bi-ticket-detailed"></i>  [ Ações/Tarefas ] o sistema abrirá uma janela para Criar uma <strong>Tarefa (Cartão) no Kanban.</strong></li>
+                                    <li>Para maiores informações veja neste Wiki, no menu Kanban, <strong>“Como criar uma tarefa”.</strong></li>
+                                    <li>Clicar no Play para assistir o vídeo abaixo (Ações/Tarefas):</li>
+                                </ul>
+                                <video controls src="https://mais.chat/wp/wp-content/uploads/2022/06/video-chat-tarefa.mp4"></video>
+
+                                <h4 class="subtitle is-5 dark-text">4.7. Botão [ Histórico ]</h4>
+                                <img style="width: 50%; margin-left: 25%;" src="/dist/assets/img/paineldochat/35.04.07-chat-botao-historico.png" alt="">
+
+                                <ul>
+                                    <li>Ao clicar no botão <i class="bi bi-wechat"></i> <strong>[ Histórico ]</strong> o sistema abrirá uma janela mostrando todos os protocolos de chats com o Contato em atendimento.</li>
+                                    <li>Para visualizar o Chat clique no Protocolo desejado. Se desejar vincular este protocolo ao chat em atendimento, clique no botão <strong>[Vincular]</strong> no rodapé da janela. </li>
+                                    <li>No Chat são mostrados os protocolo a ele vinculado(s)</li>
+                                    <li>Clicando em cima de um protocolo vinculado no Chat, o sistema abre o Protocolo em uma janela, para consulta</li>
+                                    <li>Clicar no Play para assistir o vídeo abaixo:</li>
+                                </ul>
+                                <p>
+                                    <strong>FALTANDO O VIDEO, FALTA ADICIONAR.</strong>
+                                </p>
+
+                                <h3 class="subtitle is-3 dark-text">5. Chat – Aba Contato</h3>
+                                <h4 class="subtitle is-5 dark-text">5.1. Procurando um Contato</h4>
+                                <ol>
+                                    <li>No Painel de Chat, selecione a <strong>Aba contato</strong> indicado pela seta em vermelho, conforme mostrado na figura abaixo: </li>
+                                </ol>
+                                <img  src="/dist/assets/img/paineldochat/36.05.01-chat-contato.png" alt="">
+                                <h8>Figura-7 – Procurar um Contato no Chat</h8>
+                                <ul>   
+                                    <li>Para pesquisar (buscar) um contato cadastrado e iniciar o Chat siga os seguintes passos:</li>
+                                        <ul>
+                                            <li>Digite o nome do Contato (no mínimo 3 letras) no <strong>campo de busca (ao lado direito da Lupa)</strong>  e o sistema irá mostrar abaixo a relação de Contatos que satisfazem a busca. A tela acima mostra um exemplo de busca do Contato com a palavra “chico” e lista todos os contatos que contêm “chico” no nome.</li>
+                                            <li>Clique no contato desejado e o sistema mostrará a tela abaixo.</li>
+                                        </ul>
+                                </ul>
+                                <img  src="/dist/assets/img/paineldochat/37.05.02-chat-contato-canal.png" alt="">
+                                <h8>Figura-8 – Tela de Contato – Conexões</h8>
+                                <ul>
+                                    <li>Na tela acima o sistema lista (no painel a direita) o Contato e logo abaixo as abas <strong>Conexões e Protocolos.</strong> Ao entrar nesta tela o sistema mostra por padrão a aba Conexões aberta, possibilitando assim iniciar uma conexão. A Aba <strong>Protocolos</strong> permite visualizar todos os protocolos de chats deste contato.</li>
+                                </ul>
+
+                                <h4 class="subtitle is-5 dark-text">5.2 Iniciando um Chat a partir do Contato</h4>
+                                <p>Na tela acima, selecione a <strong>aba Conexões</strong> indicado pela seta em vermelho, conforme mostrado na figura acima e observar:</p>
+                                <ol>
+                                    <li>O sistema lista as conexões (canais) para iniciar um Chat com o contato selecionado.</li>
+                                    <li>Cada Canal está associado a um número de Whatsapp configurado no Painel na opção Canais.</li>
+                                    <li>Os canais passíveis de utilização são os que estão com o status de <strong>CONECTADO</strong> destacados em verde.</li>
+                                    <li>A direita de cada Canal aparece um ícone, o qual tem a seguinte funcionalidade</li>
+                                        <ul>
+                                            <li><img style="width: 18px;" src="/dist/assets/img/paineldochat/38.05.03-chat-contato-botao-chat-ativo.png" alt=""> -> Canal em uso pelo Atendente com Chat ativo com o Contato selecionado.</li>
+                                            <li><img style="width: 18px;" src="/dist/assets/img/paineldochat/39.05.03-chat-contato-botao-enviar-chat.png" alt=""> -> Canal disponível para efetuar conexão de Chat com o Contato selecionado. Clique no ícone para iniciar a conexão.</li>
+                                        </ul>
+                                </ol>
+                                
+                                <h4 class="subtitle is-5 dark-text">5.3 Visualizando o conteúdo do chat do protocolo</h4>
+                                <p>
+                                    Na tela abaixo (Figura-9), selecione a aba <strong>Protocolos</strong> indicado pela seta em vermelho, conforme mostrado na figura abaixo: </li>
+                                </p>
+                                <img  src="/dist/assets/img/paineldochat/40.05.04-chat-contato-protocolo.png" alt="">
+                                <h8>Figura-9 – Tela de Contato – Protocolos</h8>
+
+                                <ol>
+                                    <li>Os Protocolos do contato selecionado estão na tabela logo abaixo da aba <strong>“Protocolo”</strong>. Os protocolos estão indicados pela marcação da barra vertical em vermelho.</li>
+                                    <li>Para visualizar o chat (conversas) do protocolo, clique em cima da linha do protocolo e o sistema mostrará uma tela com o respectivo chat, conforme mostrado abaixo.</li>
+                                </ol>
+                                <img  src="/dist/assets/img/paineldochat/41.Captura de tela 2022-09-13 134353.png" alt="">
+                                <h8>Figura-10 – Tela de Contato – Visualizar Chat do Protocolo</h8>
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="maischat-copyright">
+            <a href="https://www.linkedin.com/company/maischatbr/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                    height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg></a>
+            <a href="https://instagram.com/maischatbr?igshid=YmMyMTA2M2Y="><svg xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg></a>
+            <a href="https://api.whatsapp.com/send/?phone=554840425300&text&type=phone_number&app_absent=0"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                </svg></i></a>
+            <hr>
+            <p class="copyright"><em>Tecnologia</em><img style="width: 11px; margin: 0 0.1rem 0 0.5rem;"
+                    src="/dist/assets/img/Icone_mais_chat_footer.svg" alt=""> <em>+Chat</em></p>
+        </div>
+    </footer>
+
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/core.js"></script>
+</body>
+
+</html>
