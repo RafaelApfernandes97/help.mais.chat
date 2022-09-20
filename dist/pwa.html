@@ -30,10 +30,12 @@
     <!-- End Google Tag Manager -->
 
     <!--Core CSS -->
+    <link rel="stylesheet" href="\node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link id="theme-sheet" rel="stylesheet" href="assets/css/orange.css">
+    <script src="https://kit.fontawesome.com/1aa107ef78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/assets/css/app.css">
+    <link id="theme-sheet" rel="stylesheet" href="/dist/assets/css/orange.css">
 </head>
 
 <body class="is-theme-core">
@@ -51,16 +53,18 @@
         <!-- TITULO DA PAGINA -->
         <!-- TITULO DA PAGINA -->
         <!-- TITULO DA PAGINA -->
+        <!-- Help center title -->
         <div id="main-hero" class="hero-body">
             <div class="container">
                 <div class="columns is-vcentered pt-40">
                     <div class="column"></div>
                     <div class="column is-9">
                         <div class="help-header">
-                            <img src="assets/img/cabecalho.svg" alt="" />
+                            <img src="/dist/assets/img/cabecalho.svg" alt="" />
                         </div>
-                        <div class="column"></div>
+
                     </div>
+                    <div class="column"></div>
                 </div>
             </div>
         </div>
@@ -75,7 +79,8 @@
                         <nav class="breadcrumbs">
                             <ul>
                                 <li><a href="../index.html">Inicio</a></li>
-                                <li>Contatos</li>
+                                <i class="fa-solid fa-message-dots"></i>
+                                <li>PWA</li>
                             </ul>
                         </nav>
 
@@ -84,35 +89,32 @@
                             <!-- Header -->
                             <div class="category-header">
                                 <div class="icon">
-                                    <i><img src="/dist/assets/img/maischat.png" alt=""></i>
+                                    <i class="bi bi-phone"></i>
                                 </div>
                                 <div class="inner-content">
-                                    <h2 class="title is-3 dark-text">Contato</h2>
+                                    <h2 class="title is-3 dark-text">PWA</h2>
                                     <div class="inner-text">
-                                        O Cadastro de Contato é utilizado para registrar os contatos para comunicação através de chats, Chat web, envio de News e demais comunicação por outras mídias sociais.
+                                        
                                     </div>
                                 </div>
                             </div>
+
+                            
 
                             <!-- List -->
                             <div class="articles-list">
 
 
                                 <div class="help-article">
-                                    <a href="faq_contatos.html">
+                                    <a href="chat-sessão.html">
                                         <div class="inner-content">
-                                            <h3 class="title is-5">Contatos</h3>
+                                            <h3 class="title is-5">Sessão do chat</h3>
                                             <div class="inner-text">
-                                                Tudo sobre sessões, atendimento ao cliente e chat.
+                                                Tudo sobre ...
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-
-
-
-
-
 
 
                             </div>
@@ -121,8 +123,9 @@
                     <div class="column"></div>
                 </div>
             </div>
-            
         </div>
+
+
         <footer>
             <div class="maischat-copyright">
                 <a href="https://www.linkedin.com/company/maischatbr/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
@@ -146,16 +149,14 @@
                         src="/dist/assets/img/Icone_mais_chat_footer.svg" alt=""> <em>+Chat</em></p>
             </div>
         </footer>
-        
-                
 
 
 
 
 
-            <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
-            <script src="assets/js/app.js"></script>
-            <script src="assets/js/core.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/core.js"></script>
 </body>
 
 </html>
