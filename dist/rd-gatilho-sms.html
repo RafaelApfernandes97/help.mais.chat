@@ -52,6 +52,8 @@
                     <nav class="breadcrumbs">
                         <ul>
                             <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="rdstation.html">RD Station</a></li>
+                                <i class="fa-solid fa-message-dots"></i>
                             <li><a href="rd-configuracao-gatilho.html">Configuração de Gatilhos</a></li>
                             <li>Gatilho de Envio de SMS</li>
                         </ul>
@@ -69,7 +71,120 @@
                             <!-- Corpo da pagina -->
                             <div class="content">
 
-                                <h1>teste</h1>
+                                <h4 class="subtitle is-5 dark-text">Introdução</h4>
+                                <p>Gatilho é onde por onde podemos realizar a configuração para que quando o contato for
+                                    cadastrado receber uma Mensagem no whatsapp ou SMS no número cadastrado. </p>
+
+                                <h6 class="subtitle is-5 dark-text">Configurando Gatilho</h6>
+                                <p>Clicando em gatilhos ira aparecer abaixo selecione o gatilho, clicando nele podemos
+                                    escolher qual tipo do gatilho que realizaremos, envio de um template ou envio de
+                                    sms, as opções de E-mail e Kambam serão implementadas no futuro</p>
+                                <p>Ao adicionar o Gatilho ele irá aparecer como aguardando edição, então é necessário
+                                    que edite o gatinho e configure a variável e o template que deseja mandar para o
+                                    contato após o cadastro do mesmo. </p>
+                                <img src="/dist/assets/img/rd-station/gitsms.gif" alt="">
+                                <h8>Figura 1 - Selecionando Gatinho</h8>
+
+                                <p>Notasse que o template está como aguardando edição e está inativo, então é necessário
+                                    editar e configurar a variável e ativar o gatinho para que o mesmo funcione
+                                    corretamente. </p>
+                                <p>Clicando em editar abrirá uma nova janela para que sejam realizadas as configurações
+                                    do gatinho conforme imagem abaixo. </p>
+                                <img src="/dist/assets/img/rd-station/38.png " alt="">
+
+                                <h6 class="subtitle is-5 dark-text">Configurando Gatilho</h6>
+
+                                <p><strong>Nome</strong></p>
+                                <li>Nome é onde inserimos o nome do gatilho para identificação do mesmo. </li>
+
+                                <p><strong>Grupo</strong></p>
+                                <li>Grupo é uma TAG que adicionamos ao gatilho para que no futuro possamos filtrar
+                                    esses gatilhos </li>
+                                <li>Exemplo: Podemos adicionar o nome do grupo de <strong>MARKETING</strong> e nesse
+                                    gatilho configurar um template de marketing, Ou podemos colocar o nome do grupo
+                                    de <strong>BOAS VINDAS</strong> e configurar a mensagem de boas-vindas quando o
+                                    contato for cadastrado. </li>
+
+                                <p><strong>Status</strong></p>
+                                <li>O status é onde colocamos se este gatilho ficara ativo ou inativo.</li>
+                                <ul>
+                                    <li>Ativo: O gatinho começara a funcionar e mandar o TEMPLATE para os contatos
+                                        que se cadastrar. </li>
+                                    <li>Inativo: Mesmo que esteja tudo configurado estando inativo o gatilho não
+                                        funcionará. </li>
+                                </ul>
+
+                                <p><strong>Temporizador</strong></p>
+                                <ul>
+                                    <li>O temporizador é um tempo determinado para que esse gatilho rode após o
+                                        cadastro
+                                        do contato.</br>
+                                        Exemplo: O contato foi cadastrado e após 15 minutos mandaremos uma mensagem
+                                        de
+                                        boas-vindas, então é necessário que coloque o tempo em minutos no
+                                        temporizador,
+                                        por padrão o temporizador vem preenchido com 0 MINUTOS, sendo assim o
+                                        gatilho é
+                                        executado de imediato após o cadastro do contato. </li>
+                                </ul>
+
+                                <p><strong>Cancela envio se houver protocolo aberto</strong></p>
+                                <ul>
+                                    <li>Está opção serve pra que caso o contato esteja com o protocolo aberto não
+                                        envie
+                                        a mensagem modelo para o contato. </li>
+                                </ul>
+
+                                <p><strong>Condicional</strong></p>
+                                <ul>
+                                    <li>Condicional é onde configuraremos o campo, operador e valor. </br>
+                                        Exemplo: </br>
+                                        Podemos colocar no CAMPO a variavel “first_conversion.content.identificador”,
+                                        OPERADOR é igual a, VALOR mais.chat
+                                    </li>
+                                </ul>
+
+                                <p>Configurando dessa forma o gatilho funcionará se quando o contato for cadastrado
+                                    e o mesmo tiver no JSON o identificador mais.chat o contato ira receber o
+                                    template configurado neste gatilho. </p>
+
+                                <p><strong>SMS</strong></p>
+                                <ul>
+                                    <li>Link Gerenciado</br>
+                                        Link gerenciado podemos incluir o link de um site da empresa ou qualquer outro link que prefira mandar no conteúdo do SMS.
+                                    </li>
+
+                                    <li>Link Whatsapp </br>
+                                        Podemos inserir o link de um numero de whatsapp e com uma mensagem pré-programada.
+                                    </li>
+
+                                    <li>Mensagem </br>
+                                        Em Mensagem é o corpo do SMS, podemos inserir até 63 caracteres 
+                                    </li>
+
+                                    <li>Botão PRIMEIRO NOME DO CONTATO </br>
+                                        ste botão insere a variável dentro do corpo do SMS onde essa variável vai pegar o primeiro nome do contato e inserir no corpo do SMS. 
+                                    </li>
+                                </ul>
+
+
+                                <p>Após preenchimento de todos os campos visualizaremos a página da configuração do
+                                    gatilho desta forma, com nome preenchido, grupo, Status Ativo que eu quero que o
+                                    gatilho já comece a funcionar de imediato, temporizador com 5 MINUTOS onde o mesmo
+                                    aguardará 5 minutos até que o template selecionado seja enviado, Cancela Envio se
+                                    houver protocolo aberto está selecionado assim caso o contato tenha protocolo aberto
+                                    o SMS não será enviada, condicional configurada onde configuramos o
+                                    campo, operador e o valor que desejamos usar como gatilho para o SMS desejamos realizar o envio .</p>
+
+                                <video controls src="/dist/assets/img/rd-station/videosms.mp4 " ></video>
+                                <h8>Video demonstrativo Envio SMS.</h8>
+                                <p>
+                                    <strong>IMPORTANTE:</strong> Após realizar todas essas configurações é necessário clicar em SALVAR,
+                                    caso saia da página e volte para realizar as configurações e não tenha salvo será
+                                    necessário realizar toda as configurações novamente, então é importante que salve as
+                                    configurações no final para que não tenha um retrabalho.
+                                </p>
+
 
 
                             </div>
