@@ -62807,8 +62807,9 @@ img {
     width: 100%;
 }
 
-p {
+p::first-letter {
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 h8 {
@@ -62859,6 +62860,7 @@ ul li {
 }
 
 
+
 footer {
     padding: 30px;
     background: #f3f5f7;
@@ -62887,3 +62889,5 @@ footer {
     font-size: 14px;
     margin-top: -1rem;
 }
+
+
