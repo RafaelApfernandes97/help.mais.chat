@@ -62880,6 +62880,7 @@ footer {
     border-top-style: solid;
     width: 300px;
     color: #a2a9af;
+    
 
 
 }
@@ -62888,6 +62889,17 @@ footer {
 .maischat-copyright .copyright {
     font-size: 14px;
     margin-top: -1rem;
+}
+
+.img70 {
+    height: 70%;
+    width: 70%;
+    margin:0 auto;
+    display: block;
+}
+
+.h870 {
+    margin-left: 20%;
 }
 
 
