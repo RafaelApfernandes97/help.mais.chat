@@ -62812,6 +62812,17 @@ p::first-letter {
     margin-left: 1rem;
 }
 
+h6 {
+    margin-bottom: 2rem;
+    font-size: 12px;
+    font-style: italic;
+    opacity: 70%;
+    display: inline-block;
+
+
+
+}
+
 h8 {
     margin-bottom: 2rem;
     font-size: 12px;
