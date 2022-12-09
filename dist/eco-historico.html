@@ -53,7 +53,7 @@
                         <ul>
                             <li><a href="../index.html">Inicio</a></li>
                             <li><a href="e-commerce.html">E-commerce</a></li>
-                            <li>Vendas</li>
+                            <li>Histórico de pedidos.</li>
                         </ul>
                     </nav>
 
@@ -63,105 +63,38 @@
                             <!-- Titulo da pagina -->
                             <!-- Titulo da pagina -->
                             <!-- Titulo da pagina -->
-                            <h2 class="title is-3 dark-text">Vendas</h2>
+                            <h2 class="title is-3 dark-text">Histórico de pedidos</h2>
 
                             <!-- Corpo da pagina -->
                             <!-- Corpo da pagina -->
                             <div class="content">
 
                                 <h4 class="subtitle is-4 dark-text">Introdução</h4>
-                                <p>Iremos ver como gerar um pedido para um contato, enviar um espelho do pedido com as
-                                    informações do pedido para a confirmação, adicionar produto ao pedido e gerar o link
-                                    de pagamento para o contato. </p>
+                                <p>Iremos ver como buscar pedidos na tela do E-commerce Pedidos, como consultar o status de um pedido e cancelar um pedido em andamento.</p>
 
-                                <h4 class="subtitle is-4 dark-text">1. Criando um pedido</h4>
-                                <p>A criação do pedido e feita através do chat com um protocolo aberto com o contato,
-                                    clicando no botão <img style="width: 30px;" src="/dist/assets/img/ecommerce/9.png"
-                                        alt=""> irá um historico dos pedidos do contato caso o contato ja tenha feito
-                                    pedidos anteriormente e terá um botão onde você vai clicar para criar o pedido.</p>
-                                <p></p>
-                                <p>Na figura abaixo vemos o histórico de pedidos do contato e o botão para CRIAR PEDIDO.
-                                </p>
-                                <img src="/dist/assets/img/ecommerce/10.png" alt="">
-                                <p></p>
+                                <h4 class="subtitle is-4 dark-text">1. Histórico de pedidos.</h4>
+                                <p>Para acessar o histórico de pedidos clique no Menu lateral na opção <b>E-commerce --> Pedidos</b> ira abrir a tela de pedidos onde será exibido todos os pedidos realizado no e-commerce.</p>
+                                <img src="/dist/assets/img/ecommerce/12.png" alt="">
 
-                                <p>Ao clicar no botão <b>CRIAR PEDIDO</b>. ira abrir as opções para adicionarmos os
-                                    produtos, preencher as informações do contato como endereço, e-mail, CPF entre
-                                    outras opções necessárias para a criação do pedido.</p>
-                                <p></p>
-                                <img src="/dist/assets/img/ecommerce/11.png" alt="">
-                                <p></p>
-                                <p>Na tela de <b>PEDIDOS</b> temos os dados do cliente, os dados da entrega e formas de
-                                    pagamento.</p>
+                                <p>Clicando em cima do pedido iremos visualizar todo o conteúdo do pedido como status, protocolo do chat onde esse pedido foi gerado, o agente que realizou o pedido e a data em que esse pedido foi gerado.</p>
+
+                                
+
+                                <p>Na figura abaixo podemos ver que é exibido todos os dados do pedido.</p>
                                 <ul>
-                                    <li>Cliente
-                                        <ul>
-                                            <li>Nome: Inseira o nome do cliente.</li>
-                                            <li>Gênero: Inserir o gênero do cliente</li>
-                                            <li>Data de Nascimento: Inserir a data de Nascicmento do cliente.</li>
-                                            <li>CPF: inserir o CPF do cliente</li>
-                                            <li>E-mail: Inserir o E-mail do cliente.</li>
-                                            <p>OBS: Todos esses dados inseridos são salvos para o proximo pedido do
-                                                cliente e salvo também nos dados do contato desse determinado cliente.
-                                            </p>
-                                        </ul>
-                                    </li>
-
-                                    <li>Entrega
-                                        <ul>
-                                            <li>Quem vai receber: é inserido o nome da pessoa que vai receber o pedido.
-                                            </li>
-                                            <li>Telefone de quem for receber: inserido o telefone de quem for receber o
-                                                pedido.</li>
-                                            <li>Local de entrega:
-                                                <p>Esse endereço é gravado dentro das informações do contato, caso o
-                                                    endereço de entrega seja outro basta selecionar outro endereço.</p>
-                                                <ul>
-                                                    <li>CEP:</li>
-                                                    <li>Logradouro:</li>
-                                                    <li>Número:</li>
-                                                    <li>Complemento:</li>
-                                                    <li>Bairro:</li>
-                                                    <li>Cidade:</li>
-                                                    <li>Estado:</li>
-
-                                                </ul>
-                                            </li>
-                                            <li>Prazo de entrega: determinamos em quantos dias o pedido será entregue.
-                                            </li>
-                                            <li>Método de entrega: Selecionamos o método de entrega do pedido.</li>
-                                            <li>Valor do Frete: Inserimos o valor do frete da entrega, se o frete for
-                                                gratuito basta selecionar a flag Frete Grátis.</li>
-                                            <li>Observações: inserimos as Observações do cliente caso tenha alguma
-                                                informação necessária para a entrega.</li>
-                                        </ul>
-
-                                    <li>Forma de entrega
-                                        <ul>
-                                            <li>Número de parcelas permitidas (Crédito): inserimos em quantas vezes o
-                                                cliente pode parcelar esse pedido.</li>
-                                            <li>Desconto: Inserimos o valor em porcentagem ou em reais para darmos o
-                                                desconto ao pedido.</li>
-                                            <li>Subtotal: É exibido o valor cheio do pedido com a somatória de todos os
-                                                valores dos produtos.</li>
-                                            <li>Total: É exibido o valor total do pedido, se tiver desconto no pedido o
-                                                valor ja é subtraído e exibido o valor correto ja com desconto.</li>
-                                        </ul>
-                                    </li>
-
-                                    <li>Botões de ação
-                                        <ul>
-                                            <li>
-                                                Voltar: Volta para a tela anterior com a exibição dos dados do protocolo.
-                                            </li>
-                                            <li>Resumo do pedido: é enviado um resumo do pedido para o cliente</li>
-                                            <li>Cancelar: Cancela o pedido</li>
-                                            <li>Gerar pedido: É gerado o pedido e enviado o link de pagamento ao cliente no chat.</li>
-                                        </ul>
-                                    </li>
-
-                                    </li>
+                                    <li>Status: é exibido o status do pedido.</li>
+                                    <li>Paramento: se o pedido foi pago ou esta aguardando pagamento.</li>
+                                    <li>Protocolo: o numero de protocolo onde foi gerado o pedido</li>
+                                    <li>Agente: Nome do agente que gerou o pedido.</li>
+                                    <li>Data pedido: a data em que o pedido foi gerado.</li>
                                 </ul>
+                                <p>Logo baixo temos o dados do cliente, dados da entrega e o total do pedido.</p>
+                                <img src="/dist/assets/img/ecommerce/13.png" alt="">
+                                
+                                <p>No topo da pagina temos o botão de cancelar pedido, clicando no botão cancelar pedido o pedido é cancelado e o link de pagamento que foi gerado junto ao pedido é também cancelado.</p>
+                                <img src="/dist/assets/img/ecommerce/14.png" alt="">
+
+                                <p>OBS: Essas alterações que são realizadas no pedido so pode ser feita por administrador.</p>
                             </div>
                         </div>
                     </div>
